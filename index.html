@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0ce3b99428.js" crossorigin="anonymous"></script>
+
+    <title>Kamalesh-Midterm</title>
+</head>
+
+<body>
+    <header>
+        <div class="navigation wrapper">
+            <a href="index.html" rel="homepage">
+                <div class="logo"><img class="logo" src="./img/logo.webp" alt="logo"></div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="./products.html">Products</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="welcome">
+            <div class="grayarea wrapper">
+                <h1>Welcome to Quelque Chose Patisserie</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quae eveniet quasi suscipit,
+                    praesentium perspiciatis numquam laudantium eius maiores minima velit illo quos dolorem a ab
+                    voluptatem, sint libero unde?
+                </p>
+                <div><button><span>Book Us</span></button></div>
+            </div>
+        </div>
+    </header>
+    <div class="order wrapper">
+        <div class="foodsimage"><img src="./img/macarons.jpg" alt="cakes"></div>
+        <div class="prices">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Product</td>
+                        <th scope="col">price</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Classic Afternoon Macarons Combo</td>
+                        <td>$30</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Vegeterian Macarons Combo</td>
+                        <td>$20</td>
+                    </tr>
+                    <th scope="row">Gloten-Free Macarons Combo</td>
+                    <td>$20</td>
+                    </tr>
+                    <th scope="row">Kids Combo Pack</td>
+                    <td>$20</td>
+                    </tr>
+                    <th scope="row">Kid's GloenFree combo Pack</td>
+                    <td>$20</td>
+                    </tr>
+                    <th scope="row">Scone and Croissant Combo</td>
+                    <td>$20</td>
+                    </tr>
+                    <th scope="row">Tea Sandwiches</td>
+                    <td>$20</td>
+                    </tr>
+                    <th scope="row">Classic Tea Breakfast</td>
+                    <td>$20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="orderform">
+            <form>
+                <br>
+                <h2>Put your order in</h2>
+                <br>
+                <div>
+                    <div><label for="Product">Product Type</label></div>
+                    <div>
+                        <select>
+                            <option value="" selected disabled hidden>Choose here</option>
+                            <option value="1">Classic Afternoon Macarons Combo</option>
+                            <option value="2">Vegeterian Macarons Combo</option>
+                            <option value="3">Gloten-Free Macarons Combo</option>
+                            <option value="4">Kids Combo Pack</option>
+                            <option value="5">Kid's GloenFree combo Pack</option>
+                            <option value="6">Scone and Croissant Combo</option>
+                            <option value="7">Tea Sandwiches</option>
+                            <option value="8">Classic Tea Breakfast</option>
+                        </select></div>
+                    <div><label for="number">How Many?</label></div>
+                    <div><input type="number" id="number"></div>
+                    <div><label for="address">delivery address</label></div>
+                    <div><textarea name="address" id="message" cols="30" rows="10"></textarea></div>
+                    <div><button type="submit"><span>Send</span></button></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="wrapper">
+        <p>© 2022, Quelque Chose Patisserie Inc</p>
+        <div>
+            <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram" hr></i></a>
+            <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <p>Powered by Kamalesh 2022</p>
+
+    </footer>
+</body>
+
+</html>

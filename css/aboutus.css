@@ -1,0 +1,28 @@
+header{
+    height: auto;
+}
+
+.aboutus{
+    padding: 20px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+}
+.aboutus img{
+    margin: 10px;
+    padding-right: 20px;
+    padding: 20px;
+}
+
+.content p{
+    display: inline-block;
+}
+
+@media screen and (min-width:760px){
+    .aboutus{
+        flex-direction: row;
+    }
+
+}

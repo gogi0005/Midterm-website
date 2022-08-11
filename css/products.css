@@ -1,0 +1,33 @@
+header{
+    height: auto;
+}
+.products, .product, .product>div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.product{
+    padding: 20px;
+    background-color: bisque;
+}
+.product img{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.h2{
+    padding: auto;
+}
+@media screen and (min-width:760px){
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-template-areas: 
+            "s1 s2 s3";
+            column-gap: 2vw;
+        }
+    .products .product:nth-child(1){grid-area: s1;}
+    .products .product:nth-child(2){grid-area: s2;}
+    .products .product:nth-child(3){grid-area: s3;}
+}

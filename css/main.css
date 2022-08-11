@@ -1,0 +1,278 @@
+*,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Rubik', sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background-color: #1e305c;
+    color: aliceblue;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    /* padding: auto; */
+    justify-content:center;
+}
+
+@keyframes rota {
+
+    10%,
+    25% {}
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    60% {
+        transform: rotate(-180deg);
+    }
+
+    75% {
+        transform: rotate(180deg);
+    }
+
+    85% {
+        transform: rotate(-180);
+    }
+}
+
+.logo {
+    animation-name: rota;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 70px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 20px;
+
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.welcome {
+    min-height: 70vh;
+    background-image: url(../img/welcome.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .welcome .grayarea,
+.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+body {
+    background-color: #feabb3;
+}
+
+.navigation {
+    background-color: #1e305c;
+}
+
+.grayarea {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.order input,
+.order textarea,
+.order select {
+    width: 100%;
+}
+
+header .welcome .grayarea {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 800;
+    display: flex;
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 16px;
+    display: flex;
+    padding: 20px 0;
+}
+
+button {
+    border-radius: 4px;
+    background-color: #feabb3;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+nav ul li {
+    width: 100%;
+
+}
+
+footer,
+footer p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: aliceblue;
+    margin: auto;
+}
+
+.order img,
+.orderform {
+    width: 100%;
+}
+
+thead {
+    background-color: #FFE6AC;
+}
+
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table caption {
+    text-align: left;
+}
+
+table tr {
+    line-height: 3rem;
+}
+
+tbody tr {
+    text-indent: 10px;
+    text-align: left;
+}
+
+.orderform button {
+    background-color: #1e305c;
+    padding: 5px 10px;
+}
+
+@media screen and (min-width:760px) {
+
+    .navigation,
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    nav {
+        flex-grow: 1;
+        align-items: flex-end;
+    }
+
+    ul {
+        width: 100%;
+        /* border: 1px solid red; */
+        justify-content: center;
+    }
+
+    .order {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "a1 a2"
+            "s3 s2";
+        column-gap: 2vw;
+    }
+
+    .order .foodsimage {
+        grid-area: a1;
+    }
+
+    ;
+
+    .order .prices {
+        grid-area: a2;
+    }
+
+    ;
+
+    .order .orderform {
+        grid-area: a3;
+        display: none;
+    }
+
+    .order .foodsimage,
+    .prices,
+    .orderform {
+        padding: 10px;
+    }
+}

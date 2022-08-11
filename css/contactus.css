@@ -1,0 +1,36 @@
+header{
+    height: auto;
+}
+.contacts{
+    padding: 20px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 50px;
+}
+
+main img{
+    width: 100%;
+}
+iframe{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+input,textarea{
+    width: 100%;
+}
+@media screen and (min-width:760px){
+    .contacts{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+        "a1 a2 a3";
+        column-gap: 2vw;
+    }
+    .contacts > .message:nth-child(1) {grid-area: a1;}
+    .contacts > .address:nth-child(2) {grid-area: a2;}
+    .contacts > .map:nth-child(3) {grid-area: a3;}
+
+}
